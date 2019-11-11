@@ -47,6 +47,8 @@ import javax.swing.JComponent;
 import javax.swing.KeyStroke;
 import javax.swing.event.HyperlinkEvent;
 
+import static de.danielluedecke.zettelkasten.util.Constants.BUILD_VERSION;
+
 /**
  *
  * @author danielludecke
@@ -63,7 +65,7 @@ public class AboutBox extends javax.swing.JDialog {
         initComponents();
         // set application icon
         setIconImage(Constants.zknicon.getImage());
-        setTitle("Zettelkasten "+Constants.BUILD_VERSION);
+        setTitle("Zettelkasten "+ BUILD_VERSION);
         // these codelines add an escape-listener to the dialog. so, when the user
         // presses the escape-key, the same action is performed as if the user
         // presses the cancel button...
