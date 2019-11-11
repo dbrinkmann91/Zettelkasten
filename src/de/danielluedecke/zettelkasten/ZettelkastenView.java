@@ -540,12 +540,12 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
         bookmarks = new Bookmarks(this, settings);
         bibtex = new BibTex(this, settings);
         // init all those classes that rely on parameters and could not be initialised
-        // befor the constructor is called...
+        // before the constructor is called...
         data = new Daten(this, settings, synonyms, bibtex);
         // init stream-logger, so we have the logging both to a file and a byte-array
         StreamHandler sHandler = new StreamHandler(baos_log, new SimpleFormatter());
         Constants.zknlogger.addHandler(sHandler);
-        // tell logger to log everthing
+        // tell logger to log everything
         Constants.zknlogger.setLevel(Level.ALL);
         // init file-logger
         FileHandler fh;
@@ -565,7 +565,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
         } catch (IOException | SecurityException ex) {
             Constants.zknlogger.log(Level.SEVERE, ex.getLocalizedMessage());
         }
-        // befor components are drawn, set the default look and feel for this application
+        // before components are drawn, set the default look and feel for this application
         setDefaultLookAndFeel();
         // setup the local for the default actions cut/copy/paste
         Tools.initLocaleForDefaultActions(org.jdesktop.application.Application.getInstance(de.danielluedecke.zettelkasten.ZettelkastenApp.class).getContext().getActionMap(ZettelkastenView.class, this));
@@ -2724,7 +2724,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
     private void initTrees() {
         // create array with all jTrees of mainframe
         javax.swing.JTree[] trees = new javax.swing.JTree[]{jTreeLuhmann, jTreeCluster, jTreeKeywords};
-        // and iterate that arrea
+        // and iterate that area
         for (javax.swing.JTree tree : trees) {
             // remove icons from jTree
             DefaultTreeCellRenderer renderer = (DefaultTreeCellRenderer) tree.getCellRenderer();
@@ -2846,7 +2846,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             // clear all table contents
             clearTreesAndTables();
         } else {
-            // Here we set up alle the textfields and lists
+            // Here we set up all the textfields and lists
             updateDisplayParts(data.getCurrentZettelPos());
             statusOfEntryLabel.setText(getResourceMap().getString("entryOfText") + " " + String.valueOf(data.getCount(Daten.ZKNCOUNT)));
         }
@@ -2955,12 +2955,12 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
     /**
      * This method checks whether a certain menu has already been added to the
-     * menu bar. We need this to avoid multiple occurences of same menus that
+     * menu bar. We need this to avoid multiple occurrences of same menus that
      * are related to the JTabbedPane.
      *
      * @param menu the menu that should be checked for existence
      * @return {@code true} if menu is already visible in the menu bar,
-     * {@code false} othwerwise.
+     * {@code false} otherwise.
      */
     private boolean menuBarHasMenu(javax.swing.JMenu menu) {
         // iterate all menu items
@@ -2984,7 +2984,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
      * JTabbedPane (formerly, they were only set visible(true/false)). Thus, we
      * have to check whether the to be displayed menu is already "visible" (i.e.
      * it already has been added to the menu bar), so we don't have the same
-     * menu multiple times displayed in the menu bar. This check is achived with
+     * menu multiple times displayed in the menu bar. This check is achieved with
      * the method
      * {@link #menuBarHasMenu(javax.swing.JMenu) menuBarHasMenu(javax.swing.JMenu)}.
      * <br><br>

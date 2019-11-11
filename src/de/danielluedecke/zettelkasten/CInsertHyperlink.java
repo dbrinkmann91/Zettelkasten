@@ -72,7 +72,7 @@ public class CInsertHyperlink extends javax.swing.JDialog {
         }
         // set application icon
         setIconImage(Constants.zknicon.getImage());
-        // disbale apply button
+        // disable apply button
         jButtonApply.setEnabled(false);
         getRootPane().setDefaultButton(jButtonApply);
         // check for param

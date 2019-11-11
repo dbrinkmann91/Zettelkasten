@@ -1635,7 +1635,7 @@ public class DesktopFrame extends javax.swing.JFrame implements WindowListener {
                 sb.append("<tr>").append(lineseparator);
                 // check whether comments should be displayed
                 if (showComments) {
-                    // retieve and create comment
+                    // retrieve and create comment
                     String com = desktopObj.getComment(TreeUtil.getNodeTimestamp(node), "<br>");
                     // insert comment as table-data
                     sb.append("<td valign=\"top\" class=\"comment\">")
@@ -2023,7 +2023,7 @@ public class DesktopFrame extends javax.swing.JFrame implements WindowListener {
 
     /**
      * This method updates the jTreeView. Each time an update for the treevuew
-     * is needed, this method is called. It then recursevly traverses all
+     * is needed, this method is called. It then recursively traverses all
      * XML-Elements of the currently activated desktop-element, where the
      * starting desktop-element is passed in the parameter {@code e}.
      * <br><br>
@@ -3867,7 +3867,7 @@ public class DesktopFrame extends javax.swing.JFrame implements WindowListener {
     }
 
     /**
-     * This actions opens an input-dialog where the user cann add comments to
+     * This actions opens an input-dialog where the user can add comments to
      * the currently selected node or bullet-point.<br><br>
      * These comments are displayed in a grey area, just like it appears in
      * typical office-word-programs (word, writer, pages...).<br><br>
