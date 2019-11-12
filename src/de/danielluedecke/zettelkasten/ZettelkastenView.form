@@ -129,7 +129,9 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextFieldLiveSearch">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldLiveSearch.toolTipText"/>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTextFieldLiveSearch.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="name" type="java.lang.String" value="jTextFieldLiveSearch" noResource="true"/>
                           </Properties>
                         </Component>
@@ -174,7 +176,7 @@
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                             <TitledBorder title="Schlagw&#xf6;rter">
-                              <Property name="titleX" resourceKey="jListEntryKeywords.border.title"/>
+                              <ResourceString PropertyName="titleX" bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jListEntryKeywords.border.title" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
                             </TitledBorder>
                           </Border>
                         </Property>
@@ -233,7 +235,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Verweise">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel1_Links.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel1_Links.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -310,22 +314,30 @@
                                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                           <TableColumnModel selectionModel="0">
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableLinks.columnModel.title0"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableLinks.columnModel.title0" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableLinks.columnModel.title1"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableLinks.columnModel.title1" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableLinks.columnModel.title2"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableLinks.columnModel.title2" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableLinks.columnModel.title3"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableLinks.columnModel.title3" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
@@ -394,21 +406,29 @@
                                             <Column editable="false" title="Bewertung" type="java.lang.Float"/>
                                           </Table>
                                         </Property>
-                                        <Property name="toolTipText" type="java.lang.String" resourceKey="jTableManLinks.toolTipText"/>
+                                        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                          <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableManLinks.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                        </Property>
                                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                           <TableColumnModel selectionModel="0">
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableManLinks.columnModel.title0"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableManLinks.columnModel.title0" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableManLinks.columnModel.title1"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableManLinks.columnModel.title1" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableManLinks.columnModel.title2"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableManLinks.columnModel.title2" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
@@ -442,7 +462,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Folgezettel">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel10_NoteSequences.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel10_NoteSequences.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -543,8 +565,12 @@
                         </Container>
                         <Component class="javax.swing.JCheckBox" name="jCheckBoxShowAllLuhmann">
                           <Properties>
-                            <Property name="text" type="java.lang.String" resourceKey="jCheckBoxShowAllLuhmann.text"/>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jCheckBoxShowAllLuhmann.toolTipText"/>
+                            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jCheckBoxShowAllLuhmann.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jCheckBoxShowAllLuhmann.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="name" type="java.lang.String" value="jCheckBoxShowAllLuhmann" noResource="true"/>
                           </Properties>
                         </Component>
@@ -557,7 +583,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Schlagw&#xf6;rter">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel2_Keywords.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel2_Keywords.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -604,7 +632,9 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextFieldFilterKeywords">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterKeywords.toolTipText"/>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTextFieldFilterKeywords.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="enabled" type="boolean" value="false"/>
                             <Property name="name" type="java.lang.String" value="jTextFieldFilterKeywords" noResource="true"/>
                           </Properties>
@@ -625,8 +655,12 @@
                         </Component>
                         <Component class="javax.swing.JCheckBox" name="jCheckBoxShowSynonyms">
                           <Properties>
-                            <Property name="text" type="java.lang.String" resourceKey="jCheckBoxShowSynonyms.text"/>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jCheckBoxShowSynonyms.toolTipText"/>
+                            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jCheckBoxShowSynonyms.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jCheckBoxShowSynonyms.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="name" type="java.lang.String" value="jCheckBoxShowSynonyms" noResource="true"/>
                           </Properties>
                         </Component>
@@ -697,12 +731,16 @@
                                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                       <TableColumnModel selectionModel="0">
                                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                          <Title resourceKey="jTableKeywords.columnModel.title0"/>
+                                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                            <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableKeywords.columnModel.title0" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                          </Title>
                                           <Editor/>
                                           <Renderer/>
                                         </Column>
                                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                          <Title resourceKey="jTableKeywords.columnModel.title1"/>
+                                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                            <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableKeywords.columnModel.title1" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                          </Title>
                                           <Editor/>
                                           <Renderer/>
                                         </Column>
@@ -732,7 +770,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Literatur">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel7_Authors.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel7_Authors.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -767,7 +807,9 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextFieldFilterAuthors">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterAuthors.toolTipText"/>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTextFieldFilterAuthors.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="enabled" type="boolean" value="false"/>
                             <Property name="name" type="java.lang.String" value="jTextFieldFilterAuthors" noResource="true"/>
                           </Properties>
@@ -838,12 +880,16 @@
                                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                           <TableColumnModel selectionModel="0">
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableAuthors.columnModel.title0"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableAuthors.columnModel.title0" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
                                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                              <Title resourceKey="jTableAuthors.columnModel.title1"/>
+                                              <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                                <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableAuthors.columnModel.title1" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                              </Title>
                                               <Editor/>
                                               <Renderer/>
                                             </Column>
@@ -941,7 +987,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="&#xdc;berschriften">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel8_Titles.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel8_Titles.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -1002,32 +1050,44 @@
                                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                   <TableColumnModel selectionModel="0">
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableTitles.columnModel.title0"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableTitles.columnModel.title0" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableTitles.columnModel.title1"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableTitles.columnModel.title1" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableTitles.columnModel.title2"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableTitles.columnModel.title2" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableTitles.columnModel.title3"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableTitles.columnModel.title3" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableTitles.columnModel.title4"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableTitles.columnModel.title4" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableTitles.columnModel.title5"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableTitles.columnModel.title5" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
@@ -1047,7 +1107,9 @@
                         </Container>
                         <Component class="javax.swing.JTextField" name="jTextFieldFilterTitles">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterTitles.toolTipText"/>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTextFieldFilterTitles.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="enabled" type="boolean" value="false"/>
                             <Property name="name" type="java.lang.String" value="jTextFieldFilterTitles" noResource="true"/>
                           </Properties>
@@ -1075,7 +1137,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Cluster">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel11_Cluster.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel11_Cluster.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -1120,7 +1184,9 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextFieldFilterCluster">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterCluster.toolTipText"/>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTextFieldFilterCluster.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="enabled" type="boolean" value="false"/>
                             <Property name="name" type="java.lang.String" value="jTextFieldFilterCluster" noResource="true"/>
                           </Properties>
@@ -1141,8 +1207,12 @@
                         </Component>
                         <Component class="javax.swing.JCheckBox" name="jCheckBoxCluster">
                           <Properties>
-                            <Property name="text" type="java.lang.String" resourceKey="jCheckBoxCluster.text"/>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jCheckBoxCluster.toolTipText"/>
+                            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jCheckBoxCluster.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jCheckBoxCluster.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="name" type="java.lang.String" value="jCheckBoxCluster" noResource="true"/>
                           </Properties>
                         </Component>
@@ -1242,7 +1312,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Anh&#xe4;nge">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel13_Attachments.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel13_Attachments.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -1301,17 +1373,23 @@
                                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                   <TableColumnModel selectionModel="0">
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableAttachments.columnModel.title0"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableAttachments.columnModel.title0" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableAttachments.columnModel.title1"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableAttachments.columnModel.title1" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
                                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableAttachments.columnModel.title2"/>
+                                      <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                        <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableAttachments.columnModel.title2" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                      </Title>
                                       <Editor/>
                                       <Renderer/>
                                     </Column>
@@ -1328,7 +1406,9 @@
                         </Container>
                         <Component class="javax.swing.JTextField" name="jTextFieldFilterAttachments">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterAttachments.toolTipText"/>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTextFieldFilterAttachments.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="enabled" type="boolean" value="false"/>
                             <Property name="name" type="java.lang.String" value="jTextFieldFilterAttachments" noResource="true"/>
                           </Properties>
@@ -1356,7 +1436,9 @@
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Lesezeichen">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel9_Bookmarks.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jPanel9_Bookmarks.TabConstraints.tabTitle" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -1386,7 +1468,9 @@
                       <SubComponents>
                         <Component class="javax.swing.JComboBox" name="jComboBoxBookmarkCategory">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jComboBoxBookmarkCategory.toolTipText"/>
+                            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jComboBoxBookmarkCategory.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                            </Property>
                             <Property name="name" type="java.lang.String" value="jComboBoxBookmarkCategory" noResource="true"/>
                           </Properties>
                         </Component>
@@ -1432,12 +1516,16 @@
                                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                       <TableColumnModel selectionModel="0">
                                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                          <Title resourceKey="jTableBookmarks.columnModel.title0"/>
+                                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                            <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableBookmarks.columnModel.title0" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                          </Title>
                                           <Editor/>
                                           <Renderer/>
                                         </Column>
                                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                          <Title resourceKey="jTableBookmarks.columnModel.title1"/>
+                                          <Title editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                                            <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTableBookmarks.columnModel.title1" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                                          </Title>
                                           <Editor/>
                                           <Renderer/>
                                         </Column>
@@ -1481,7 +1569,7 @@
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                                         <TitledBorder title="Kommentar">
-                                          <Property name="titleX" resourceKey="jEditorPaneBookmarkComment.border.title"/>
+                                          <ResourceString PropertyName="titleX" bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jEditorPaneBookmarkComment.border.title" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
                                         </TitledBorder>
                                       </Border>
                                     </Property>
@@ -1514,7 +1602,9 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="fileMenu">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="fileMenu.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.fileMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="fileMenu" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -1583,7 +1673,9 @@
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="recentDocsSubMenu">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="recentDocsSubMenu.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.recentDocsSubMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="recentDocsSubMenu" noResource="true"/>
               </Properties>
               <SubComponents>
@@ -1722,7 +1814,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="editMenu">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="editMenu.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.editMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="editMenu" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -1872,7 +1966,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="findMenu">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="findMenu.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.findMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="findMenu" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -1899,7 +1995,9 @@
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="findEntryWithout">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="findEntryWithout.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.findEntryWithout.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="findEntryWithout" noResource="true"/>
               </Properties>
               <SubComponents>
@@ -2056,7 +2154,9 @@
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="findEntryKeywordsMenu">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="findEntryKeywordsMenu.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.findEntryKeywordsMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="findEntryKeywordsMenu" noResource="true"/>
               </Properties>
               <SubComponents>
@@ -2169,7 +2269,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="historyBack" methodName="historyBack"/>
                 </Property>
-                <Property name="text" type="java.lang.String" resourceKey="historyForMenuItem.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.historyForMenuItem.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="historyForMenuItem" noResource="true"/>
               </Properties>
             </MenuItem>
@@ -2178,7 +2280,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="historyFor" methodName="historyFor"/>
                 </Property>
-                <Property name="text" type="java.lang.String" resourceKey="histroyBackMenuItem.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.histroyBackMenuItem.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="histroyBackMenuItem" noResource="true"/>
               </Properties>
             </MenuItem>
@@ -2199,7 +2303,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenu">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenu.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenu" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -2306,7 +2412,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuLinks">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuLinks.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuLinks.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuLinks" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -2413,7 +2521,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuLuhmann">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuLuhmann.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuLuhmann.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuLuhmann" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -2469,7 +2579,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="findLuhmannParent" methodName="findLuhmannParent"/>
                 </Property>
-                <Property name="text" type="java.lang.String" resourceKey="viewMenuLuhmannShowTopLevel.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuLuhmannShowTopLevel.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="viewMenuLuhmannShowTopLevel" noResource="true"/>
               </Properties>
             </MenuItem>
@@ -2515,7 +2627,9 @@
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="viewMenuLuhmannShowLevel">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="viewMenuLuhmannShowLevel.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuLuhmannShowLevel.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="viewMenuLuhmannShowLevel" noResource="true"/>
               </Properties>
               <SubComponents>
@@ -2578,7 +2692,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuKeywords">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuKeywords.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuKeywords.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuKeywords" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -2741,7 +2857,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuAuthors">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuAuthors.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuAuthors.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuAuthors" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -2760,7 +2878,9 @@
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="viewAuthorsSubFind">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="viewAuthorsSubFind.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewAuthorsSubFind.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="viewAuthorsSubFind" noResource="true"/>
               </Properties>
               <SubComponents>
@@ -2797,7 +2917,9 @@
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="viewAuthorsSubEdit">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="viewAuthorsSubEdit.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewAuthorsSubEdit.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="viewAuthorsSubEdit" noResource="true"/>
               </Properties>
               <SubComponents>
@@ -2847,7 +2969,9 @@
             </MenuItem>
             <Menu class="javax.swing.JMenu" name="viewAuthorsSubAdd">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="viewAuthorsSubAdd.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewAuthorsSubAdd.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="viewAuthorsSubAdd" noResource="true"/>
               </Properties>
               <SubComponents>
@@ -2970,7 +3094,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuTitles">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuTitles.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuTitles.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuTitles" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -3075,7 +3201,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuCluster">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuCluster.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuCluster.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuCluster" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -3099,7 +3227,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuBookmarks">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuBookmarks.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuBookmarks.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuBookmarks" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -3199,7 +3329,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="viewMenuAttachments">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="viewMenuAttachments.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.viewMenuAttachments.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="viewMenuAttachments" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -3262,7 +3394,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="windowsMenu">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="windowsMenu.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.windowsMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="windowsMenu" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -3317,7 +3451,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="aboutMenu">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="aboutMenu.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.aboutMenu.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="aboutMenu" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -3351,7 +3487,7 @@
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
             <MatteColorBorder bottom="0" left="0" right="0" top="1">
-              <Property name="color" resourceKey="statusPanel.border.matteColor"/>
+              <Color PropertyName="color" blue="40" green="40" red="40" type="rgb"/>
             </MatteColorBorder>
           </Border>
         </Property>
@@ -3440,7 +3576,9 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="statusEntryLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="statusEntryLabel.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.statusEntryLabel.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="statusEntryLabel" noResource="true"/>
               </Properties>
             </Component>
@@ -3452,13 +3590,17 @@
             <Component class="javax.swing.JTextField" name="jTextFieldEntryNumber">
               <Properties>
                 <Property name="columns" type="int" value="4"/>
-                <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldEntryNumber.toolTipText"/>
+                <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.jTextFieldEntryNumber.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="jTextFieldEntryNumber" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="statusOfEntryLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="statusOfEntryLabel.text"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.statusOfEntryLabel.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="name" type="java.lang.String" value="statusOfEntryLabel" noResource="true"/>
               </Properties>
             </Component>
@@ -3509,8 +3651,12 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/error.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" resourceKey="statusErrorButton.text"/>
-                <Property name="toolTipText" type="java.lang.String" resourceKey="statusErrorButton.toolTipText"/>
+                <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.statusErrorButton.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
+                <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.statusErrorButton.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="focusPainted" type="boolean" value="false"/>
@@ -3525,7 +3671,9 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/add-to-desktop.png"/>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" resourceKey="statusDesktopEntryButton.toolTipText"/>
+                <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+                  <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.statusDesktopEntryButton.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+                </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="focusPainted" type="boolean" value="false"/>
@@ -3541,7 +3689,7 @@
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
             <MatteColorBorder bottom="1" left="0" right="0" top="0">
-              <Property name="color" resourceKey="toolBar.border.matteColor"/>
+              <Color PropertyName="color" blue="40" green="40" red="40" type="rgb"/>
             </MatteColorBorder>
           </Border>
         </Property>
@@ -3559,7 +3707,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="newEntry" methodName="newEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_newEntry.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_newEntry.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3573,7 +3723,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="openDocument" methodName="openDocument"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_open.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_open.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3587,7 +3739,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="saveDocument" methodName="saveDocument"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_save.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_save.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3606,7 +3760,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="editEntry" methodName="editEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_edit.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_edit.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3620,7 +3776,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="deleteCurrentEntry" methodName="deleteCurrentEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_delete.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_delete.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3660,7 +3818,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="selectAllText" methodName="selectAllText"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_selectall.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_selectall.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3679,7 +3839,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="manualInsertLinks" methodName="manualInsertLinks"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_addmanlinks.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_addmanlinks.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3693,7 +3855,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="manualInsertEntry" methodName="manualInsertEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_addluhmann.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_addluhmann.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3707,7 +3871,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="addToBookmark" methodName="addToBookmark"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_addbookmark.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_addbookmark.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3721,7 +3887,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="addToDesktop" methodName="addToDesktop"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_addtodesktop.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_addtodesktop.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3740,7 +3908,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="find" methodName="find"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_find.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_find.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3754,7 +3924,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="showFirstEntry" methodName="showFirstEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_first.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_first.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3768,7 +3940,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="showPrevEntry" methodName="showPrevEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_prev.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_prev.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3782,7 +3956,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="showNextEntry" methodName="showNextEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_next.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_next.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -3796,7 +3972,9 @@
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="showLastEntry" methodName="showLastEntry"/>
             </Property>
-            <Property name="text" type="java.lang.String" resourceKey="tb_last.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.tb_last.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
@@ -4191,7 +4369,9 @@
         </Component>
         <Menu class="javax.swing.JMenu" name="popupAuthorsSubAdd">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="popupAuthorsSubAdd.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.popupAuthorsSubAdd.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="popupAuthorsSubAdd" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -4341,7 +4521,9 @@
         </Component>
         <Menu class="javax.swing.JMenu" name="popupLuhmannSetLevel">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="popupLuhmannSetLevel.text"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="de/danielluedecke/zettelkasten/Bundle.properties" key="ZettelkastenView.popupLuhmannSetLevel.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+            </Property>
             <Property name="name" type="java.lang.String" value="popupLuhmannSetLevel" noResource="true"/>
           </Properties>
           <SubComponents>
@@ -4814,11 +4996,11 @@
     </Property>
   </Properties>
   <AuxValues>
-    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="1"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
     <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
     <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
-    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="true"/>
     <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>

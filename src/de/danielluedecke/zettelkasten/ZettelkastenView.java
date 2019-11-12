@@ -11801,7 +11801,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             jPanelLiveSearch.setName("jPanelLiveSearch"); // NOI18N
 
-            jTextFieldLiveSearch.setToolTipText(resourceMap.getString("jTextFieldLiveSearch.toolTipText")); // NOI18N
+            java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("de/danielluedecke/zettelkasten/Bundle"); // NOI18N
+            jTextFieldLiveSearch.setToolTipText(bundle.getString("ZettelkastenView.jTextFieldLiveSearch.toolTipText")); // NOI18N
             jTextFieldLiveSearch.setName("jTextFieldLiveSearch"); // NOI18N
 
             javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(ZettelkastenView.class, this);
@@ -11853,7 +11854,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jScrollPane3.setBorder(null);
             jScrollPane3.setName("jScrollPane3"); // NOI18N
 
-            jListEntryKeywords.setBorder(javax.swing.BorderFactory.createTitledBorder(resourceMap.getString("jListEntryKeywords.border.title"))); // NOI18N
+            jListEntryKeywords.setBorder(javax.swing.BorderFactory.createTitledBorder(bundle.getString("ZettelkastenView.jListEntryKeywords.border.title"))); // NOI18N
             jListEntryKeywords.setModel(keywordListModel);
             jListEntryKeywords.setName("jListEntryKeywords"); // NOI18N
             jListEntryKeywords.setVisibleRowCount(-1);
@@ -11910,10 +11911,10 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jTableLinks.getTableHeader().setReorderingAllowed(false);
             jScrollPane4.setViewportView(jTableLinks);
             if (jTableLinks.getColumnModel().getColumnCount() > 0) {
-                jTableLinks.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("jTableLinks.columnModel.title0")); // NOI18N
-                jTableLinks.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("jTableLinks.columnModel.title1")); // NOI18N
-                jTableLinks.getColumnModel().getColumn(2).setHeaderValue(resourceMap.getString("jTableLinks.columnModel.title2")); // NOI18N
-                jTableLinks.getColumnModel().getColumn(3).setHeaderValue(resourceMap.getString("jTableLinks.columnModel.title3")); // NOI18N
+                jTableLinks.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("ZettelkastenView.jTableLinks.columnModel.title0")); // NOI18N
+                jTableLinks.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("ZettelkastenView.jTableLinks.columnModel.title1")); // NOI18N
+                jTableLinks.getColumnModel().getColumn(2).setHeaderValue(bundle.getString("ZettelkastenView.jTableLinks.columnModel.title2")); // NOI18N
+                jTableLinks.getColumnModel().getColumn(3).setHeaderValue(bundle.getString("ZettelkastenView.jTableLinks.columnModel.title3")); // NOI18N
             }
 
             javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
@@ -11960,15 +11961,15 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     return canEdit [columnIndex];
                 }
             });
-            jTableManLinks.setToolTipText(resourceMap.getString("jTableManLinks.toolTipText")); // NOI18N
+            jTableManLinks.setToolTipText(bundle.getString("ZettelkastenView.jTableManLinks.toolTipText")); // NOI18N
             jTableManLinks.setDragEnabled(true);
             jTableManLinks.setName("jTableManLinks"); // NOI18N
             jTableManLinks.getTableHeader().setReorderingAllowed(false);
             jScrollPane15.setViewportView(jTableManLinks);
             if (jTableManLinks.getColumnModel().getColumnCount() > 0) {
-                jTableManLinks.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("jTableManLinks.columnModel.title0")); // NOI18N
-                jTableManLinks.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("jTableManLinks.columnModel.title1")); // NOI18N
-                jTableManLinks.getColumnModel().getColumn(2).setHeaderValue(resourceMap.getString("jTableManLinks.columnModel.title2")); // NOI18N
+                jTableManLinks.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("ZettelkastenView.jTableManLinks.columnModel.title0")); // NOI18N
+                jTableManLinks.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("ZettelkastenView.jTableManLinks.columnModel.title1")); // NOI18N
+                jTableManLinks.getColumnModel().getColumn(2).setHeaderValue(bundle.getString("ZettelkastenView.jTableManLinks.columnModel.title2")); // NOI18N
             }
 
             javax.swing.GroupLayout jPanelManLinksLayout = new javax.swing.GroupLayout(jPanelManLinks);
@@ -11995,7 +11996,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                 .addComponent(jSplitPaneLinks)
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel1_Links.TabConstraints.tabTitle"), jPanel1_Links); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel1_Links.TabConstraints.tabTitle"), jPanel1_Links); // NOI18N
 
             jPanel10_NoteSequences.setName("jPanel10_NoteSequences"); // NOI18N
 
@@ -12024,8 +12025,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             jSplitPane2.setRightComponent(jScrollPane2);
 
-            jCheckBoxShowAllLuhmann.setText(resourceMap.getString("jCheckBoxShowAllLuhmann.text")); // NOI18N
-            jCheckBoxShowAllLuhmann.setToolTipText(resourceMap.getString("jCheckBoxShowAllLuhmann.toolTipText")); // NOI18N
+            jCheckBoxShowAllLuhmann.setText(bundle.getString("ZettelkastenView.jCheckBoxShowAllLuhmann.text")); // NOI18N
+            jCheckBoxShowAllLuhmann.setToolTipText(bundle.getString("ZettelkastenView.jCheckBoxShowAllLuhmann.toolTipText")); // NOI18N
             jCheckBoxShowAllLuhmann.setName("jCheckBoxShowAllLuhmann"); // NOI18N
 
             javax.swing.GroupLayout jPanel10_NoteSequencesLayout = new javax.swing.GroupLayout(jPanel10_NoteSequences);
@@ -12047,11 +12048,11 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addContainerGap())
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel10_NoteSequences.TabConstraints.tabTitle"), jPanel10_NoteSequences); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel10_NoteSequences.TabConstraints.tabTitle"), jPanel10_NoteSequences); // NOI18N
 
             jPanel2_Keywords.setName("jPanel2_Keywords"); // NOI18N
 
-            jTextFieldFilterKeywords.setToolTipText(resourceMap.getString("jTextFieldFilterKeywords.toolTipText")); // NOI18N
+            jTextFieldFilterKeywords.setToolTipText(bundle.getString("ZettelkastenView.jTextFieldFilterKeywords.toolTipText")); // NOI18N
             jTextFieldFilterKeywords.setEnabled(false);
             jTextFieldFilterKeywords.setName("jTextFieldFilterKeywords"); // NOI18N
 
@@ -12062,8 +12063,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jButtonRefreshKeywords.setFocusPainted(false);
             jButtonRefreshKeywords.setName("jButtonRefreshKeywords"); // NOI18N
 
-            jCheckBoxShowSynonyms.setText(resourceMap.getString("jCheckBoxShowSynonyms.text")); // NOI18N
-            jCheckBoxShowSynonyms.setToolTipText(resourceMap.getString("jCheckBoxShowSynonyms.toolTipText")); // NOI18N
+            jCheckBoxShowSynonyms.setText(bundle.getString("ZettelkastenView.jCheckBoxShowSynonyms.text")); // NOI18N
+            jCheckBoxShowSynonyms.setToolTipText(bundle.getString("ZettelkastenView.jCheckBoxShowSynonyms.toolTipText")); // NOI18N
             jCheckBoxShowSynonyms.setName("jCheckBoxShowSynonyms"); // NOI18N
 
             jPanel16.setName("jPanel16"); // NOI18N
@@ -12106,8 +12107,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jTableKeywords.getTableHeader().setReorderingAllowed(false);
             jScrollPane6.setViewportView(jTableKeywords);
             if (jTableKeywords.getColumnModel().getColumnCount() > 0) {
-                jTableKeywords.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("jTableKeywords.columnModel.title0")); // NOI18N
-                jTableKeywords.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("jTableKeywords.columnModel.title1")); // NOI18N
+                jTableKeywords.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("ZettelkastenView.jTableKeywords.columnModel.title0")); // NOI18N
+                jTableKeywords.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("ZettelkastenView.jTableKeywords.columnModel.title1")); // NOI18N
             }
 
             javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
@@ -12156,11 +12157,11 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addContainerGap())
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel2_Keywords.TabConstraints.tabTitle"), jPanel2_Keywords); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel2_Keywords.TabConstraints.tabTitle"), jPanel2_Keywords); // NOI18N
 
             jPanel7_Authors.setName("jPanel7_Authors"); // NOI18N
 
-            jTextFieldFilterAuthors.setToolTipText(resourceMap.getString("jTextFieldFilterAuthors.toolTipText")); // NOI18N
+            jTextFieldFilterAuthors.setToolTipText(bundle.getString("ZettelkastenView.jTextFieldFilterAuthors.toolTipText")); // NOI18N
             jTextFieldFilterAuthors.setEnabled(false);
             jTextFieldFilterAuthors.setName("jTextFieldFilterAuthors"); // NOI18N
 
@@ -12203,8 +12204,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jTableAuthors.getTableHeader().setReorderingAllowed(false);
             jScrollPane7.setViewportView(jTableAuthors);
             if (jTableAuthors.getColumnModel().getColumnCount() > 0) {
-                jTableAuthors.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("jTableAuthors.columnModel.title0")); // NOI18N
-                jTableAuthors.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("jTableAuthors.columnModel.title1")); // NOI18N
+                jTableAuthors.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("ZettelkastenView.jTableAuthors.columnModel.title0")); // NOI18N
+                jTableAuthors.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("ZettelkastenView.jTableAuthors.columnModel.title1")); // NOI18N
             }
 
             jComboBoxAuthorType.setName("jComboBoxAuthorType"); // NOI18N
@@ -12281,7 +12282,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addContainerGap())
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel7_Authors.TabConstraints.tabTitle"), jPanel7_Authors); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel7_Authors.TabConstraints.tabTitle"), jPanel7_Authors); // NOI18N
 
             jPanel8_Titles.setName("jPanel8_Titles"); // NOI18N
 
@@ -12316,15 +12317,15 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jTableTitles.getTableHeader().setReorderingAllowed(false);
             jScrollPane8.setViewportView(jTableTitles);
             if (jTableTitles.getColumnModel().getColumnCount() > 0) {
-                jTableTitles.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("jTableTitles.columnModel.title0")); // NOI18N
-                jTableTitles.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("jTableTitles.columnModel.title1")); // NOI18N
-                jTableTitles.getColumnModel().getColumn(2).setHeaderValue(resourceMap.getString("jTableTitles.columnModel.title2")); // NOI18N
-                jTableTitles.getColumnModel().getColumn(3).setHeaderValue(resourceMap.getString("jTableTitles.columnModel.title3")); // NOI18N
-                jTableTitles.getColumnModel().getColumn(4).setHeaderValue(resourceMap.getString("jTableTitles.columnModel.title4")); // NOI18N
-                jTableTitles.getColumnModel().getColumn(5).setHeaderValue(resourceMap.getString("jTableTitles.columnModel.title5")); // NOI18N
+                jTableTitles.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("ZettelkastenView.jTableTitles.columnModel.title0")); // NOI18N
+                jTableTitles.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("ZettelkastenView.jTableTitles.columnModel.title1")); // NOI18N
+                jTableTitles.getColumnModel().getColumn(2).setHeaderValue(bundle.getString("ZettelkastenView.jTableTitles.columnModel.title2")); // NOI18N
+                jTableTitles.getColumnModel().getColumn(3).setHeaderValue(bundle.getString("ZettelkastenView.jTableTitles.columnModel.title3")); // NOI18N
+                jTableTitles.getColumnModel().getColumn(4).setHeaderValue(bundle.getString("ZettelkastenView.jTableTitles.columnModel.title4")); // NOI18N
+                jTableTitles.getColumnModel().getColumn(5).setHeaderValue(bundle.getString("ZettelkastenView.jTableTitles.columnModel.title5")); // NOI18N
             }
 
-            jTextFieldFilterTitles.setToolTipText(resourceMap.getString("jTextFieldFilterTitles.toolTipText")); // NOI18N
+            jTextFieldFilterTitles.setToolTipText(bundle.getString("ZettelkastenView.jTextFieldFilterTitles.toolTipText")); // NOI18N
             jTextFieldFilterTitles.setEnabled(false);
             jTextFieldFilterTitles.setName("jTextFieldFilterTitles"); // NOI18N
 
@@ -12358,11 +12359,11 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addContainerGap())
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel8_Titles.TabConstraints.tabTitle"), jPanel8_Titles); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel8_Titles.TabConstraints.tabTitle"), jPanel8_Titles); // NOI18N
 
             jPanel11_Cluster.setName("jPanel11_Cluster"); // NOI18N
 
-            jTextFieldFilterCluster.setToolTipText(resourceMap.getString("jTextFieldFilterCluster.toolTipText")); // NOI18N
+            jTextFieldFilterCluster.setToolTipText(bundle.getString("ZettelkastenView.jTextFieldFilterCluster.toolTipText")); // NOI18N
             jTextFieldFilterCluster.setEnabled(false);
             jTextFieldFilterCluster.setName("jTextFieldFilterCluster"); // NOI18N
 
@@ -12373,8 +12374,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jButtonRefreshCluster.setFocusPainted(false);
             jButtonRefreshCluster.setName("jButtonRefreshCluster"); // NOI18N
 
-            jCheckBoxCluster.setText(resourceMap.getString("jCheckBoxCluster.text")); // NOI18N
-            jCheckBoxCluster.setToolTipText(resourceMap.getString("jCheckBoxCluster.toolTipText")); // NOI18N
+            jCheckBoxCluster.setText(bundle.getString("ZettelkastenView.jCheckBoxCluster.text")); // NOI18N
+            jCheckBoxCluster.setToolTipText(bundle.getString("ZettelkastenView.jCheckBoxCluster.toolTipText")); // NOI18N
             jCheckBoxCluster.setName("jCheckBoxCluster"); // NOI18N
 
             jPanel3.setName("jPanel3"); // NOI18N
@@ -12444,7 +12445,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addContainerGap())
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel11_Cluster.TabConstraints.tabTitle"), jPanel11_Cluster); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel11_Cluster.TabConstraints.tabTitle"), jPanel11_Cluster); // NOI18N
 
             jPanel13_Attachments.setName("jPanel13_Attachments"); // NOI18N
 
@@ -12482,12 +12483,12 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jTableAttachments.setName("jTableAttachments"); // NOI18N
             jScrollPane13.setViewportView(jTableAttachments);
             if (jTableAttachments.getColumnModel().getColumnCount() > 0) {
-                jTableAttachments.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("jTableAttachments.columnModel.title0")); // NOI18N
-                jTableAttachments.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("jTableAttachments.columnModel.title1")); // NOI18N
-                jTableAttachments.getColumnModel().getColumn(2).setHeaderValue(resourceMap.getString("jTableAttachments.columnModel.title2")); // NOI18N
+                jTableAttachments.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("ZettelkastenView.jTableAttachments.columnModel.title0")); // NOI18N
+                jTableAttachments.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("ZettelkastenView.jTableAttachments.columnModel.title1")); // NOI18N
+                jTableAttachments.getColumnModel().getColumn(2).setHeaderValue(bundle.getString("ZettelkastenView.jTableAttachments.columnModel.title2")); // NOI18N
             }
 
-            jTextFieldFilterAttachments.setToolTipText(resourceMap.getString("jTextFieldFilterAttachments.toolTipText")); // NOI18N
+            jTextFieldFilterAttachments.setToolTipText(bundle.getString("ZettelkastenView.jTextFieldFilterAttachments.toolTipText")); // NOI18N
             jTextFieldFilterAttachments.setEnabled(false);
             jTextFieldFilterAttachments.setName("jTextFieldFilterAttachments"); // NOI18N
 
@@ -12521,11 +12522,11 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addContainerGap())
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel13_Attachments.TabConstraints.tabTitle"), jPanel13_Attachments); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel13_Attachments.TabConstraints.tabTitle"), jPanel13_Attachments); // NOI18N
 
             jPanel9_Bookmarks.setName("jPanel9_Bookmarks"); // NOI18N
 
-            jComboBoxBookmarkCategory.setToolTipText(resourceMap.getString("jComboBoxBookmarkCategory.toolTipText")); // NOI18N
+            jComboBoxBookmarkCategory.setToolTipText(bundle.getString("ZettelkastenView.jComboBoxBookmarkCategory.toolTipText")); // NOI18N
             jComboBoxBookmarkCategory.setName("jComboBoxBookmarkCategory"); // NOI18N
 
             jSplitPane3.setBorder(null);
@@ -12569,8 +12570,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jTableBookmarks.getTableHeader().setReorderingAllowed(false);
             jScrollPane9.setViewportView(jTableBookmarks);
             if (jTableBookmarks.getColumnModel().getColumnCount() > 0) {
-                jTableBookmarks.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("jTableBookmarks.columnModel.title0")); // NOI18N
-                jTableBookmarks.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("jTableBookmarks.columnModel.title1")); // NOI18N
+                jTableBookmarks.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("ZettelkastenView.jTableBookmarks.columnModel.title0")); // NOI18N
+                jTableBookmarks.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("ZettelkastenView.jTableBookmarks.columnModel.title1")); // NOI18N
             }
 
             jSplitPane3.setLeftComponent(jScrollPane9);
@@ -12580,7 +12581,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jScrollPane14.setName("jScrollPane14"); // NOI18N
 
             jEditorPaneBookmarkComment.setEditable(false);
-            jEditorPaneBookmarkComment.setBorder(javax.swing.BorderFactory.createTitledBorder(resourceMap.getString("jEditorPaneBookmarkComment.border.title"))); // NOI18N
+            jEditorPaneBookmarkComment.setBorder(javax.swing.BorderFactory.createTitledBorder(bundle.getString("ZettelkastenView.jEditorPaneBookmarkComment.border.title"))); // NOI18N
             jEditorPaneBookmarkComment.setContentType(resourceMap.getString("jEditorPaneBookmarkComment.contentType")); // NOI18N
             jEditorPaneBookmarkComment.setName("jEditorPaneBookmarkComment"); // NOI18N
             jScrollPane14.setViewportView(jEditorPaneBookmarkComment);
@@ -12606,7 +12607,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addContainerGap())
             );
 
-            jTabbedPaneMain.addTab(resourceMap.getString("jPanel9_Bookmarks.TabConstraints.tabTitle"), jPanel9_Bookmarks); // NOI18N
+            jTabbedPaneMain.addTab(bundle.getString("ZettelkastenView.jPanel9_Bookmarks.TabConstraints.tabTitle"), jPanel9_Bookmarks); // NOI18N
 
             javax.swing.GroupLayout jPanelMainRightLayout = new javax.swing.GroupLayout(jPanelMainRight);
             jPanelMainRight.setLayout(jPanelMainRightLayout);
@@ -12629,7 +12630,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.setName("menuBar"); // NOI18N
 
-            fileMenu.setText(resourceMap.getString("fileMenu.text")); // NOI18N
+            fileMenu.setText(bundle.getString("ZettelkastenView.fileMenu.text")); // NOI18N
             fileMenu.setName("fileMenu"); // NOI18N
 
             newEntryMenuItem.setAction(actionMap.get("newEntry")); // NOI18N
@@ -12665,7 +12666,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             openMenuItem.setName("openMenuItem"); // NOI18N
             fileMenu.add(openMenuItem);
 
-            recentDocsSubMenu.setText(resourceMap.getString("recentDocsSubMenu.text")); // NOI18N
+            recentDocsSubMenu.setText(bundle.getString("ZettelkastenView.recentDocsSubMenu.text")); // NOI18N
             recentDocsSubMenu.setName("recentDocsSubMenu"); // NOI18N
 
             recentDoc1.setName("recentDoc1"); // NOI18N
@@ -12743,7 +12744,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(fileMenu);
 
-            editMenu.setText(resourceMap.getString("editMenu.text")); // NOI18N
+            editMenu.setText(bundle.getString("ZettelkastenView.editMenu.text")); // NOI18N
             editMenu.setName("editMenu"); // NOI18N
 
             editMenuItem.setAction(actionMap.get("editEntry")); // NOI18N
@@ -12822,7 +12823,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(editMenu);
 
-            findMenu.setText(resourceMap.getString("findMenu.text")); // NOI18N
+            findMenu.setText(bundle.getString("ZettelkastenView.findMenu.text")); // NOI18N
             findMenu.setName("findMenu"); // NOI18N
 
             findMenuItem.setAction(actionMap.get("find")); // NOI18N
@@ -12836,7 +12837,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator31.setName("jSeparator31"); // NOI18N
             findMenu.add(jSeparator31);
 
-            findEntryWithout.setText(resourceMap.getString("findEntryWithout.text")); // NOI18N
+            findEntryWithout.setText(bundle.getString("ZettelkastenView.findEntryWithout.text")); // NOI18N
             findEntryWithout.setName("findEntryWithout"); // NOI18N
 
             findEntriesWithoutKeywords.setAction(actionMap.get("findWithoutKeywords")); // NOI18N
@@ -12920,7 +12921,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator68.setName("jSeparator68"); // NOI18N
             findMenu.add(jSeparator68);
 
-            findEntryKeywordsMenu.setText(resourceMap.getString("findEntryKeywordsMenu.text")); // NOI18N
+            findEntryKeywordsMenu.setText(bundle.getString("ZettelkastenView.findEntryKeywordsMenu.text")); // NOI18N
             findEntryKeywordsMenu.setName("findEntryKeywordsMenu"); // NOI18N
 
             menuKwListSearchOr.setAction(actionMap.get("searchKeywordsFromListLogOr")); // NOI18N
@@ -12980,12 +12981,12 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             findMenu.add(jSeparator111);
 
             historyForMenuItem.setAction(actionMap.get("historyBack")); // NOI18N
-            historyForMenuItem.setText(resourceMap.getString("historyForMenuItem.text")); // NOI18N
+            historyForMenuItem.setText(bundle.getString("ZettelkastenView.historyForMenuItem.text")); // NOI18N
             historyForMenuItem.setName("historyForMenuItem"); // NOI18N
             findMenu.add(historyForMenuItem);
 
             histroyBackMenuItem.setAction(actionMap.get("historyFor")); // NOI18N
-            histroyBackMenuItem.setText(resourceMap.getString("histroyBackMenuItem.text")); // NOI18N
+            histroyBackMenuItem.setText(bundle.getString("ZettelkastenView.histroyBackMenuItem.text")); // NOI18N
             histroyBackMenuItem.setName("histroyBackMenuItem"); // NOI18N
             findMenu.add(histroyBackMenuItem);
 
@@ -12998,7 +12999,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(findMenu);
 
-            viewMenu.setText(resourceMap.getString("viewMenu.text")); // NOI18N
+            viewMenu.setText(bundle.getString("ZettelkastenView.viewMenu.text")); // NOI18N
             viewMenu.setName("viewMenu"); // NOI18N
 
             showLinksMenuItem.setAction(actionMap.get("menuShowLinks")); // NOI18N
@@ -13054,7 +13055,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenu);
 
-            viewMenuLinks.setText(resourceMap.getString("viewMenuLinks.text")); // NOI18N
+            viewMenuLinks.setText(bundle.getString("ZettelkastenView.viewMenuLinks.text")); // NOI18N
             viewMenuLinks.setName("viewMenuLinks"); // NOI18N
 
             viewMenuLinksKwListRefresh.setAction(actionMap.get("refreshFilteredLinks")); // NOI18N
@@ -13112,7 +13113,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuLinks);
 
-            viewMenuLuhmann.setText(resourceMap.getString("viewMenuLuhmann.text")); // NOI18N
+            viewMenuLuhmann.setText(bundle.getString("ZettelkastenView.viewMenuLuhmann.text")); // NOI18N
             viewMenuLuhmann.setName("viewMenuLuhmann"); // NOI18N
 
             viewMenuLuhmannDelete.setAction(actionMap.get("deleteLuhmannFromEntry")); // NOI18N
@@ -13141,7 +13142,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             viewMenuLuhmann.add(jSeparator73);
 
             viewMenuLuhmannShowTopLevel.setAction(actionMap.get("findLuhmannParent")); // NOI18N
-            viewMenuLuhmannShowTopLevel.setText(resourceMap.getString("viewMenuLuhmannShowTopLevel.text")); // NOI18N
+            viewMenuLuhmannShowTopLevel.setText(bundle.getString("ZettelkastenView.viewMenuLuhmannShowTopLevel.text")); // NOI18N
             viewMenuLuhmannShowTopLevel.setName("viewMenuLuhmannShowTopLevel"); // NOI18N
             viewMenuLuhmann.add(viewMenuLuhmannShowTopLevel);
 
@@ -13167,7 +13168,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator101.setName("jSeparator101"); // NOI18N
             viewMenuLuhmann.add(jSeparator101);
 
-            viewMenuLuhmannShowLevel.setText(resourceMap.getString("viewMenuLuhmannShowLevel.text")); // NOI18N
+            viewMenuLuhmannShowLevel.setText(bundle.getString("ZettelkastenView.viewMenuLuhmannShowLevel.text")); // NOI18N
             viewMenuLuhmannShowLevel.setName("viewMenuLuhmannShowLevel"); // NOI18N
 
             viewMenuLuhmannDepthAll.setAction(actionMap.get("setLuhmannLevelAll")); // NOI18N
@@ -13201,7 +13202,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuLuhmann);
 
-            viewMenuKeywords.setText(resourceMap.getString("viewMenuKeywords.text")); // NOI18N
+            viewMenuKeywords.setText(bundle.getString("ZettelkastenView.viewMenuKeywords.text")); // NOI18N
             viewMenuKeywords.setName("viewMenuKeywords"); // NOI18N
 
             viewKeywordsCopy.setAction(actionMap.get("copy"));
@@ -13287,7 +13288,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuKeywords);
 
-            viewMenuAuthors.setText(resourceMap.getString("viewMenuAuthors.text")); // NOI18N
+            viewMenuAuthors.setText(bundle.getString("ZettelkastenView.viewMenuAuthors.text")); // NOI18N
             viewMenuAuthors.setName("viewMenuAuthors"); // NOI18N
 
             viewAuthorsCopy.setAction(actionMap.get("copy"));
@@ -13297,7 +13298,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator28.setName("jSeparator28"); // NOI18N
             viewMenuAuthors.add(jSeparator28);
 
-            viewAuthorsSubFind.setText(resourceMap.getString("viewAuthorsSubFind.text")); // NOI18N
+            viewAuthorsSubFind.setText(bundle.getString("ZettelkastenView.viewAuthorsSubFind.text")); // NOI18N
             viewAuthorsSubFind.setName("viewAuthorsSubFind"); // NOI18N
 
             viewAuthorsSearchOr.setAction(actionMap.get("searchLogOr")); // NOI18N
@@ -13317,7 +13318,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator29.setName("jSeparator29"); // NOI18N
             viewMenuAuthors.add(jSeparator29);
 
-            viewAuthorsSubEdit.setText(resourceMap.getString("viewAuthorsSubEdit.text")); // NOI18N
+            viewAuthorsSubEdit.setText(bundle.getString("ZettelkastenView.viewAuthorsSubEdit.text")); // NOI18N
             viewAuthorsSubEdit.setName("viewAuthorsSubEdit"); // NOI18N
 
             viewAuthorsNew.setAction(actionMap.get("newAuthor")); // NOI18N
@@ -13344,7 +13345,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator30.setName("jSeparator30"); // NOI18N
             viewMenuAuthors.add(jSeparator30);
 
-            viewAuthorsSubAdd.setText(resourceMap.getString("viewAuthorsSubAdd.text")); // NOI18N
+            viewAuthorsSubAdd.setText(bundle.getString("ZettelkastenView.viewAuthorsSubAdd.text")); // NOI18N
             viewAuthorsSubAdd.setName("viewAuthorsSubAdd"); // NOI18N
 
             viewAuthorsAddToEntry.setAction(actionMap.get("addAuthorToList")); // NOI18N
@@ -13410,7 +13411,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuAuthors);
 
-            viewMenuTitles.setText(resourceMap.getString("viewMenuTitles.text")); // NOI18N
+            viewMenuTitles.setText(bundle.getString("ZettelkastenView.viewMenuTitles.text")); // NOI18N
             viewMenuTitles.setName("viewMenuTitles"); // NOI18N
 
             viewTitlesCopy.setAction(actionMap.get("copy"));
@@ -13466,7 +13467,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuTitles);
 
-            viewMenuCluster.setText(resourceMap.getString("viewMenuCluster.text")); // NOI18N
+            viewMenuCluster.setText(bundle.getString("ZettelkastenView.viewMenuCluster.text")); // NOI18N
             viewMenuCluster.setName("viewMenuCluster"); // NOI18N
 
             viewClusterExport.setAction(actionMap.get("exportCluster")); // NOI18N
@@ -13479,7 +13480,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuCluster);
 
-            viewMenuBookmarks.setText(resourceMap.getString("viewMenuBookmarks.text")); // NOI18N
+            viewMenuBookmarks.setText(bundle.getString("ZettelkastenView.viewMenuBookmarks.text")); // NOI18N
             viewMenuBookmarks.setName("viewMenuBookmarks"); // NOI18N
 
             viewBookmarksEdit.setAction(actionMap.get("editBookmark")); // NOI18N
@@ -13532,7 +13533,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuBookmarks);
 
-            viewMenuAttachments.setText(resourceMap.getString("viewMenuAttachments.text")); // NOI18N
+            viewMenuAttachments.setText(bundle.getString("ZettelkastenView.viewMenuAttachments.text")); // NOI18N
             viewMenuAttachments.setName("viewMenuAttachments"); // NOI18N
 
             viewAttachmentsCopy.setAction(actionMap.get("copy"));
@@ -13566,7 +13567,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(viewMenuAttachments);
 
-            windowsMenu.setText(resourceMap.getString("windowsMenu.text")); // NOI18N
+            windowsMenu.setText(bundle.getString("ZettelkastenView.windowsMenu.text")); // NOI18N
             windowsMenu.setName("windowsMenu"); // NOI18N
 
             showSearchResultsMenuItem.setAction(actionMap.get("showSearchResultWindow")); // NOI18N
@@ -13596,7 +13597,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(windowsMenu);
 
-            aboutMenu.setText(resourceMap.getString("aboutMenu.text")); // NOI18N
+            aboutMenu.setText(bundle.getString("ZettelkastenView.aboutMenu.text")); // NOI18N
             aboutMenu.setName("aboutMenu"); // NOI18N
 
             aboutMenuItem.setAction(actionMap.get("showAboutBox")); // NOI18N
@@ -13612,22 +13613,22 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             menuBar.add(aboutMenu);
 
-            statusPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, resourceMap.getColor("statusPanel.border.matteColor"))); // NOI18N
+            statusPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(64, 64, 64)));
             statusPanel.setMinimumSize(new java.awt.Dimension(200, 16));
             statusPanel.setName("statusPanel"); // NOI18N
 
             jPanel12.setName("jPanel12"); // NOI18N
 
-            statusEntryLabel.setText(resourceMap.getString("statusEntryLabel.text")); // NOI18N
+            statusEntryLabel.setText(bundle.getString("ZettelkastenView.statusEntryLabel.text")); // NOI18N
             statusEntryLabel.setName("statusEntryLabel"); // NOI18N
 
             statusAnimationLabel.setName("statusAnimationLabel"); // NOI18N
 
             jTextFieldEntryNumber.setColumns(4);
-            jTextFieldEntryNumber.setToolTipText(resourceMap.getString("jTextFieldEntryNumber.toolTipText")); // NOI18N
+            jTextFieldEntryNumber.setToolTipText(bundle.getString("ZettelkastenView.jTextFieldEntryNumber.toolTipText")); // NOI18N
             jTextFieldEntryNumber.setName("jTextFieldEntryNumber"); // NOI18N
 
-            statusOfEntryLabel.setText(resourceMap.getString("statusOfEntryLabel.text")); // NOI18N
+            statusOfEntryLabel.setText(bundle.getString("ZettelkastenView.statusOfEntryLabel.text")); // NOI18N
             statusOfEntryLabel.setName("statusOfEntryLabel"); // NOI18N
 
             buttonHistoryBack.setAction(actionMap.get("historyBack")); // NOI18N
@@ -13650,8 +13651,8 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             statusErrorButton.setAction(actionMap.get("showErrorLog")); // NOI18N
             statusErrorButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/de/danielluedecke/zettelkasten/resources/icons/error.png"))); // NOI18N
-            statusErrorButton.setText(resourceMap.getString("statusErrorButton.text")); // NOI18N
-            statusErrorButton.setToolTipText(resourceMap.getString("statusErrorButton.toolTipText")); // NOI18N
+            statusErrorButton.setText(bundle.getString("ZettelkastenView.statusErrorButton.text")); // NOI18N
+            statusErrorButton.setToolTipText(bundle.getString("ZettelkastenView.statusErrorButton.toolTipText")); // NOI18N
             statusErrorButton.setBorderPainted(false);
             statusErrorButton.setContentAreaFilled(false);
             statusErrorButton.setFocusPainted(false);
@@ -13659,7 +13660,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
 
             statusDesktopEntryButton.setAction(actionMap.get("showEntryInDesktopWindow")); // NOI18N
             statusDesktopEntryButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/de/danielluedecke/zettelkasten/resources/icons/add-to-desktop.png"))); // NOI18N
-            statusDesktopEntryButton.setToolTipText(resourceMap.getString("statusDesktopEntryButton.toolTipText")); // NOI18N
+            statusDesktopEntryButton.setToolTipText(bundle.getString("ZettelkastenView.statusDesktopEntryButton.toolTipText")); // NOI18N
             statusDesktopEntryButton.setBorderPainted(false);
             statusDesktopEntryButton.setContentAreaFilled(false);
             statusDesktopEntryButton.setFocusPainted(false);
@@ -13723,13 +13724,13 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
                     .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             );
 
-            toolBar.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, resourceMap.getColor("toolBar.border.matteColor"))); // NOI18N
+            toolBar.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(64, 64, 64)));
             toolBar.setFloatable(false);
             toolBar.setMinimumSize(new java.awt.Dimension(300, 20));
             toolBar.setName("toolBar"); // NOI18N
 
             tb_newEntry.setAction(actionMap.get("newEntry")); // NOI18N
-            tb_newEntry.setText(resourceMap.getString("tb_newEntry.text")); // NOI18N
+            tb_newEntry.setText(bundle.getString("ZettelkastenView.tb_newEntry.text")); // NOI18N
             tb_newEntry.setBorderPainted(false);
             tb_newEntry.setFocusPainted(false);
             tb_newEntry.setFocusable(false);
@@ -13739,7 +13740,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_newEntry);
 
             tb_open.setAction(actionMap.get("openDocument")); // NOI18N
-            tb_open.setText(resourceMap.getString("tb_open.text")); // NOI18N
+            tb_open.setText(bundle.getString("ZettelkastenView.tb_open.text")); // NOI18N
             tb_open.setBorderPainted(false);
             tb_open.setFocusPainted(false);
             tb_open.setFocusable(false);
@@ -13749,7 +13750,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_open);
 
             tb_save.setAction(actionMap.get("saveDocument")); // NOI18N
-            tb_save.setText(resourceMap.getString("tb_save.text")); // NOI18N
+            tb_save.setText(bundle.getString("ZettelkastenView.tb_save.text")); // NOI18N
             tb_save.setBorderPainted(false);
             tb_save.setFocusPainted(false);
             tb_save.setFocusable(false);
@@ -13762,7 +13763,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(jSeparator4);
 
             tb_edit.setAction(actionMap.get("editEntry")); // NOI18N
-            tb_edit.setText(resourceMap.getString("tb_edit.text")); // NOI18N
+            tb_edit.setText(bundle.getString("ZettelkastenView.tb_edit.text")); // NOI18N
             tb_edit.setBorderPainted(false);
             tb_edit.setFocusPainted(false);
             tb_edit.setFocusable(false);
@@ -13772,7 +13773,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_edit);
 
             tb_delete.setAction(actionMap.get("deleteCurrentEntry")); // NOI18N
-            tb_delete.setText(resourceMap.getString("tb_delete.text")); // NOI18N
+            tb_delete.setText(bundle.getString("ZettelkastenView.tb_delete.text")); // NOI18N
             tb_delete.setBorderPainted(false);
             tb_delete.setFocusPainted(false);
             tb_delete.setFocusable(false);
@@ -13800,7 +13801,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_paste);
 
             tb_selectall.setAction(actionMap.get("selectAllText")); // NOI18N
-            tb_selectall.setText(resourceMap.getString("tb_selectall.text")); // NOI18N
+            tb_selectall.setText(bundle.getString("ZettelkastenView.tb_selectall.text")); // NOI18N
             tb_selectall.setBorderPainted(false);
             tb_selectall.setFocusPainted(false);
             tb_selectall.setFocusable(false);
@@ -13813,7 +13814,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(jSeparator5);
 
             tb_addmanlinks.setAction(actionMap.get("manualInsertLinks")); // NOI18N
-            tb_addmanlinks.setText(resourceMap.getString("tb_addmanlinks.text")); // NOI18N
+            tb_addmanlinks.setText(bundle.getString("ZettelkastenView.tb_addmanlinks.text")); // NOI18N
             tb_addmanlinks.setBorderPainted(false);
             tb_addmanlinks.setFocusPainted(false);
             tb_addmanlinks.setFocusable(false);
@@ -13823,7 +13824,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_addmanlinks);
 
             tb_addluhmann.setAction(actionMap.get("manualInsertEntry")); // NOI18N
-            tb_addluhmann.setText(resourceMap.getString("tb_addluhmann.text")); // NOI18N
+            tb_addluhmann.setText(bundle.getString("ZettelkastenView.tb_addluhmann.text")); // NOI18N
             tb_addluhmann.setBorderPainted(false);
             tb_addluhmann.setFocusPainted(false);
             tb_addluhmann.setFocusable(false);
@@ -13833,7 +13834,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_addluhmann);
 
             tb_addbookmark.setAction(actionMap.get("addToBookmark")); // NOI18N
-            tb_addbookmark.setText(resourceMap.getString("tb_addbookmark.text")); // NOI18N
+            tb_addbookmark.setText(bundle.getString("ZettelkastenView.tb_addbookmark.text")); // NOI18N
             tb_addbookmark.setBorderPainted(false);
             tb_addbookmark.setFocusPainted(false);
             tb_addbookmark.setFocusable(false);
@@ -13843,7 +13844,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_addbookmark);
 
             tb_addtodesktop.setAction(actionMap.get("addToDesktop")); // NOI18N
-            tb_addtodesktop.setText(resourceMap.getString("tb_addtodesktop.text")); // NOI18N
+            tb_addtodesktop.setText(bundle.getString("ZettelkastenView.tb_addtodesktop.text")); // NOI18N
             tb_addtodesktop.setBorderPainted(false);
             tb_addtodesktop.setFocusPainted(false);
             tb_addtodesktop.setFocusable(false);
@@ -13856,7 +13857,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(jSeparator10);
 
             tb_find.setAction(actionMap.get("find")); // NOI18N
-            tb_find.setText(resourceMap.getString("tb_find.text")); // NOI18N
+            tb_find.setText(bundle.getString("ZettelkastenView.tb_find.text")); // NOI18N
             tb_find.setBorderPainted(false);
             tb_find.setFocusPainted(false);
             tb_find.setFocusable(false);
@@ -13866,7 +13867,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_find);
 
             tb_first.setAction(actionMap.get("showFirstEntry")); // NOI18N
-            tb_first.setText(resourceMap.getString("tb_first.text")); // NOI18N
+            tb_first.setText(bundle.getString("ZettelkastenView.tb_first.text")); // NOI18N
             tb_first.setBorderPainted(false);
             tb_first.setFocusPainted(false);
             tb_first.setFocusable(false);
@@ -13876,7 +13877,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_first);
 
             tb_prev.setAction(actionMap.get("showPrevEntry")); // NOI18N
-            tb_prev.setText(resourceMap.getString("tb_prev.text")); // NOI18N
+            tb_prev.setText(bundle.getString("ZettelkastenView.tb_prev.text")); // NOI18N
             tb_prev.setBorderPainted(false);
             tb_prev.setFocusPainted(false);
             tb_prev.setFocusable(false);
@@ -13886,7 +13887,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_prev);
 
             tb_next.setAction(actionMap.get("showNextEntry")); // NOI18N
-            tb_next.setText(resourceMap.getString("tb_next.text")); // NOI18N
+            tb_next.setText(bundle.getString("ZettelkastenView.tb_next.text")); // NOI18N
             tb_next.setBorderPainted(false);
             tb_next.setFocusPainted(false);
             tb_next.setFocusable(false);
@@ -13896,7 +13897,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             toolBar.add(tb_next);
 
             tb_last.setAction(actionMap.get("showLastEntry")); // NOI18N
-            tb_last.setText(resourceMap.getString("tb_last.text")); // NOI18N
+            tb_last.setText(bundle.getString("ZettelkastenView.tb_last.text")); // NOI18N
             tb_last.setBorderPainted(false);
             tb_last.setFocusPainted(false);
             tb_last.setFocusable(false);
@@ -14096,7 +14097,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator49.setName("jSeparator49"); // NOI18N
             jPopupMenuAuthors.add(jSeparator49);
 
-            popupAuthorsSubAdd.setText(resourceMap.getString("popupAuthorsSubAdd.text")); // NOI18N
+            popupAuthorsSubAdd.setText(bundle.getString("ZettelkastenView.popupAuthorsSubAdd.text")); // NOI18N
             popupAuthorsSubAdd.setName("popupAuthorsSubAdd"); // NOI18N
 
             popupAuthorsManLinks.setAction(actionMap.get("addManLinksLogOr")); // NOI18N
@@ -14172,7 +14173,7 @@ public class ZettelkastenView extends FrameView implements WindowListener, DropT
             jSeparator117.setName("jSeparator117"); // NOI18N
             jPopupMenuLuhmann.add(jSeparator117);
 
-            popupLuhmannSetLevel.setText(resourceMap.getString("popupLuhmannSetLevel.text")); // NOI18N
+            popupLuhmannSetLevel.setText(bundle.getString("ZettelkastenView.popupLuhmannSetLevel.text")); // NOI18N
             popupLuhmannSetLevel.setName("popupLuhmannSetLevel"); // NOI18N
 
             popupLuhmannLevelAll.setAction(actionMap.get("setLuhmannLevelAll")); // NOI18N
