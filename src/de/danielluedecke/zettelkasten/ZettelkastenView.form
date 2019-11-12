@@ -129,7 +129,6 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextFieldLiveSearch">
                           <Properties>
-                            <Property name="text" type="java.lang.String" resourceKey="jTextFieldLiveSearch.text"/>
                             <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldLiveSearch.toolTipText"/>
                             <Property name="name" type="java.lang.String" value="jTextFieldLiveSearch" noResource="true"/>
                           </Properties>
@@ -139,7 +138,9 @@
                             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="findLiveCancel" methodName="findLiveCancel"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" resourceKey="jButton1.icon"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/cancel.png"/>
+                            </Property>
                             <Property name="borderPainted" type="boolean" value="false"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                             <Property name="focusPainted" type="boolean" value="false"/>
@@ -201,7 +202,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="291" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="424" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Component id="jTabbedPaneMain" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -211,7 +212,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <EmptySpace min="0" pref="529" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                          <Component id="jTabbedPaneMain" alignment="1" pref="529" max="32767" attributes="0"/>
+                          <Component id="jTabbedPaneMain" alignment="1" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -225,14 +226,14 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="jPanel1">
+                    <Container class="javax.swing.JPanel" name="jPanel1_Links">
                       <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel1" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="jPanel1_Links" noResource="true"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Verweise">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel1.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel1_Links.TabConstraints.tabTitle"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -276,7 +277,7 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane4" alignment="0" pref="270" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane4" alignment="0" pref="422" max="32767" attributes="0"/>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
@@ -361,7 +362,7 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane15" alignment="0" pref="270" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane15" alignment="0" pref="422" max="32767" attributes="0"/>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
@@ -431,14 +432,17 @@
                         </Container>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel10">
+                    <Container class="javax.swing.JPanel" name="jPanel10_NoteSequences">
                       <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel10" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="jPanel10_NoteSequences" noResource="true"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="ZettelkastenView_jPanel10_Folgezettel"/>
+                      </AuxValues>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Folgezettel">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel10.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel10_NoteSequences.TabConstraints.tabTitle"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -546,14 +550,14 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel2">
+                    <Container class="javax.swing.JPanel" name="jPanel2_Keywords">
                       <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel2" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="jPanel2_Keywords" noResource="true"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Schlagw&#xf6;rter">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel2.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel2_Keywords.TabConstraints.tabTitle"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -566,13 +570,13 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Component id="jTextFieldFilterKeywords" pref="226" max="32767" attributes="0"/>
+                                          <Component id="jTextFieldFilterKeywords" pref="378" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jButtonRefreshKeywords" min="-2" pref="26" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jCheckBoxShowSynonyms" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="102" max="32767" attributes="0"/>
+                                          <EmptySpace min="0" pref="262" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -600,7 +604,6 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextFieldFilterKeywords">
                           <Properties>
-                            <Property name="text" type="java.lang.String" resourceKey="jTextFieldFilterKeywords.text"/>
                             <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterKeywords.toolTipText"/>
                             <Property name="enabled" type="boolean" value="false"/>
                             <Property name="name" type="java.lang.String" value="jTextFieldFilterKeywords" noResource="true"/>
@@ -611,7 +614,9 @@
                             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="refreshKeywordList" methodName="refreshKeywordList"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" resourceKey="jButtonRefreshKeywords.icon"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/view-refresh.png"/>
+                            </Property>
                             <Property name="borderPainted" type="boolean" value="false"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                             <Property name="focusPainted" type="boolean" value="false"/>
@@ -633,8 +638,8 @@
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane17" alignment="1" pref="270" max="32767" attributes="1"/>
-                                  <Component id="jScrollPane6" alignment="0" pref="270" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane17" alignment="1" pref="422" max="32767" attributes="1"/>
+                                  <Component id="jScrollPane6" alignment="0" pref="422" max="32767" attributes="0"/>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
@@ -720,14 +725,14 @@
                         </Container>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel7">
+                    <Container class="javax.swing.JPanel" name="jPanel7_Authors">
                       <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel7" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="jPanel7_Authors" noResource="true"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Literatur">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel7.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel7_Authors.TabConstraints.tabTitle"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -793,8 +798,8 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jComboBoxAuthorType" alignment="0" pref="270" max="32767" attributes="0"/>
-                                      <Component id="jScrollPane7" alignment="0" pref="270" max="32767" attributes="0"/>
+                                      <Component id="jComboBoxAuthorType" alignment="0" pref="422" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane7" alignment="0" pref="422" max="32767" attributes="0"/>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
@@ -876,7 +881,7 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane16" alignment="0" pref="270" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane16" alignment="0" pref="422" max="32767" attributes="0"/>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
@@ -918,7 +923,9 @@
                             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="refreshAuthorList" methodName="refreshAuthorList"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" resourceKey="jButtonRefreshAuthors.icon"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/view-refresh.png"/>
+                            </Property>
                             <Property name="borderPainted" type="boolean" value="false"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                             <Property name="focusPainted" type="boolean" value="false"/>
@@ -927,14 +934,14 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel8">
+                    <Container class="javax.swing.JPanel" name="jPanel8_Titles">
                       <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel8" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="jPanel8_Titles" noResource="true"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="&#xdc;berschriften">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel8.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel8_Titles.TabConstraints.tabTitle"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -944,12 +951,12 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextFieldFilterTitles" pref="226" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldFilterTitles" pref="378" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jButtonRefreshTitles" min="-2" pref="26" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jScrollPane8" alignment="0" pref="270" max="32767" attributes="0"/>
+                              <Component id="jScrollPane8" alignment="0" pref="422" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
@@ -1050,7 +1057,9 @@
                             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="refreshTitleList" methodName="refreshTitleList"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" resourceKey="jButtonRefreshTitles.icon"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/view-refresh.png"/>
+                            </Property>
                             <Property name="borderPainted" type="boolean" value="false"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                             <Property name="focusPainted" type="boolean" value="false"/>
@@ -1059,14 +1068,14 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel11">
+                    <Container class="javax.swing.JPanel" name="jPanel11_Cluster">
                       <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel11" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="jPanel11_Cluster" noResource="true"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Cluster">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel11.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel11_Cluster.TabConstraints.tabTitle"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -1084,7 +1093,7 @@
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="jCheckBoxCluster" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="32" max="32767" attributes="0"/>
+                                          <EmptySpace min="0" pref="192" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -1121,7 +1130,9 @@
                             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                               <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="refreshClusterList" methodName="refreshClusterList"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" resourceKey="jButtonRefreshCluster.icon"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/view-refresh.png"/>
+                            </Property>
                             <Property name="borderPainted" type="boolean" value="false"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                             <Property name="focusPainted" type="boolean" value="false"/>
@@ -1224,14 +1235,128 @@
                         </Container>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel9">
+                    <Container class="javax.swing.JPanel" name="jPanel13_Attachments">
                       <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel9" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="jPanel13_Attachments" noResource="true"/>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                          <JTabbedPaneConstraints tabName="Anh&#xe4;nge">
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel13_Attachments.TabConstraints.tabTitle"/>
+                          </JTabbedPaneConstraints>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jTextFieldFilterAttachments" pref="378" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButtonRefreshAttachments" min="-2" pref="26" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane13" alignment="0" pref="422" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jScrollPane13" pref="443" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jTextFieldFilterAttachments" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButtonRefreshAttachments" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane13">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                            <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+                            <Property name="name" type="java.lang.String" value="jScrollPane13" noResource="true"/>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTable" name="jTableAttachments">
+                              <Properties>
+                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                  <Table columnCount="3" rowCount="4">
+                                    <Column editable="false" title="Anhang" type="java.lang.String"/>
+                                    <Column editable="false" title="Typ" type="java.lang.String"/>
+                                    <Column editable="false" title="Zettel" type="java.lang.Integer"/>
+                                  </Table>
+                                </Property>
+                                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                                  <TableColumnModel selectionModel="0">
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title resourceKey="jTableAttachments.columnModel.title0"/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title resourceKey="jTableAttachments.columnModel.title1"/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title resourceKey="jTableAttachments.columnModel.title2"/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                  </TableColumnModel>
+                                </Property>
+                                <Property name="dragEnabled" type="boolean" value="true"/>
+                                <Property name="name" type="java.lang.String" value="jTableAttachments" noResource="true"/>
+                                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="javax.swing.JTextField" name="jTextFieldFilterAttachments">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterAttachments.toolTipText"/>
+                            <Property name="enabled" type="boolean" value="false"/>
+                            <Property name="name" type="java.lang.String" value="jTextFieldFilterAttachments" noResource="true"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="jButtonRefreshAttachments">
+                          <Properties>
+                            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                              <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="refreshAttachmentList" methodName="refreshAttachmentList"/>
+                            </Property>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/view-refresh.png"/>
+                            </Property>
+                            <Property name="borderPainted" type="boolean" value="false"/>
+                            <Property name="contentAreaFilled" type="boolean" value="false"/>
+                            <Property name="focusPainted" type="boolean" value="false"/>
+                            <Property name="name" type="java.lang.String" value="jButtonRefreshAttachments" noResource="true"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel9_Bookmarks">
+                      <Properties>
+                        <Property name="name" type="java.lang.String" value="jPanel9_Bookmarks" noResource="true"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                           <JTabbedPaneConstraints tabName="Lesezeichen">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel9.TabConstraints.tabTitle"/>
+                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel9_Bookmarks.TabConstraints.tabTitle"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -1241,7 +1366,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBoxBookmarkCategory" pref="258" max="32767" attributes="0"/>
+                                  <Component id="jComboBoxBookmarkCategory" pref="410" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jSplitPane3" alignment="1" pref="0" max="32767" attributes="0"/>
@@ -1368,118 +1493,6 @@
                             </Container>
                           </SubComponents>
                         </Container>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel13">
-                      <Properties>
-                        <Property name="name" type="java.lang.String" value="jPanel13" noResource="true"/>
-                      </Properties>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                          <JTabbedPaneConstraints tabName="Anh&#xe4;nge">
-                            <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel13.TabConstraints.tabTitle"/>
-                          </JTabbedPaneConstraints>
-                        </Constraint>
-                      </Constraints>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextFieldFilterAttachments" pref="226" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButtonRefreshAttachments" min="-2" pref="26" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jScrollPane13" alignment="0" pref="270" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jScrollPane13" pref="443" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jTextFieldFilterAttachments" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButtonRefreshAttachments" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Container class="javax.swing.JScrollPane" name="jScrollPane13">
-                          <Properties>
-                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                              <Border info="null"/>
-                            </Property>
-                            <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
-                            <Property name="name" type="java.lang.String" value="jScrollPane13" noResource="true"/>
-                          </Properties>
-                          <AuxValues>
-                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                          </AuxValues>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                          <SubComponents>
-                            <Component class="javax.swing.JTable" name="jTableAttachments">
-                              <Properties>
-                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                  <Table columnCount="3" rowCount="4">
-                                    <Column editable="false" title="Anhang" type="java.lang.String"/>
-                                    <Column editable="false" title="Typ" type="java.lang.String"/>
-                                    <Column editable="false" title="Zettel" type="java.lang.Integer"/>
-                                  </Table>
-                                </Property>
-                                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
-                                  <TableColumnModel selectionModel="0">
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableAttachments.columnModel.title0"/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableAttachments.columnModel.title1"/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                      <Title resourceKey="jTableAttachments.columnModel.title2"/>
-                                      <Editor/>
-                                      <Renderer/>
-                                    </Column>
-                                  </TableColumnModel>
-                                </Property>
-                                <Property name="dragEnabled" type="boolean" value="true"/>
-                                <Property name="name" type="java.lang.String" value="jTableAttachments" noResource="true"/>
-                                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
-                                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
-                                </Property>
-                              </Properties>
-                            </Component>
-                          </SubComponents>
-                        </Container>
-                        <Component class="javax.swing.JTextField" name="jTextFieldFilterAttachments">
-                          <Properties>
-                            <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldFilterAttachments.toolTipText"/>
-                            <Property name="enabled" type="boolean" value="false"/>
-                            <Property name="name" type="java.lang.String" value="jTextFieldFilterAttachments" noResource="true"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="jButtonRefreshAttachments">
-                          <Properties>
-                            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                              <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="refreshAttachmentList" methodName="refreshAttachmentList"/>
-                            </Property>
-                            <Property name="icon" type="javax.swing.Icon" resourceKey="jButtonRefreshAttachments.icon"/>
-                            <Property name="borderPainted" type="boolean" value="false"/>
-                            <Property name="contentAreaFilled" type="boolean" value="false"/>
-                            <Property name="focusPainted" type="boolean" value="false"/>
-                            <Property name="name" type="java.lang.String" value="jButtonRefreshAttachments" noResource="true"/>
-                          </Properties>
-                        </Component>
                       </SubComponents>
                     </Container>
                   </SubComponents>
@@ -3393,7 +3406,7 @@
                       <Component id="statusErrorButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="statusDesktopEntryButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="667" max="32767" attributes="0"/>
+                      <EmptySpace pref="772" max="32767" attributes="0"/>
                       <Component id="statusMsgLabel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="statusAnimationLabel" min="-2" max="-2" attributes="0"/>
@@ -3439,7 +3452,6 @@
             <Component class="javax.swing.JTextField" name="jTextFieldEntryNumber">
               <Properties>
                 <Property name="columns" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" resourceKey="jTextFieldEntryNumber.text"/>
                 <Property name="toolTipText" type="java.lang.String" resourceKey="jTextFieldEntryNumber.toolTipText"/>
                 <Property name="name" type="java.lang.String" value="jTextFieldEntryNumber" noResource="true"/>
               </Properties>
@@ -3455,7 +3467,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="historyBack" methodName="historyBack"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" resourceKey="buttonHistoryBack.icon"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/hist_back.png"/>
+                </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="focusPainted" type="boolean" value="false"/>
@@ -3470,7 +3484,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="historyFor" methodName="historyFor"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" resourceKey="buttonHistoryFore.icon"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/hist_forward.png"/>
+                </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="focusPainted" type="boolean" value="false"/>
@@ -3482,7 +3498,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="statusMsgLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="statusMsgLabel.text"/>
                 <Property name="name" type="java.lang.String" value="statusMsgLabel" noResource="true"/>
               </Properties>
             </Component>
@@ -3491,7 +3506,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="showErrorLog" methodName="showErrorLog"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" resourceKey="statusErrorButton.icon"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/error.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" resourceKey="statusErrorButton.text"/>
                 <Property name="toolTipText" type="java.lang.String" resourceKey="statusErrorButton.toolTipText"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
@@ -3505,8 +3522,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="de.danielluedecke.zettelkasten.ZettelkastenView" id="showEntryInDesktopWindow" methodName="showEntryInDesktopWindow"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" resourceKey="statusDesktopEntryButton.icon"/>
-                <Property name="text" type="java.lang.String" resourceKey="statusDesktopEntryButton.text"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/de/danielluedecke/zettelkasten/resources/icons/add-to-desktop.png"/>
+                </Property>
                 <Property name="toolTipText" type="java.lang.String" resourceKey="statusDesktopEntryButton.toolTipText"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -4805,6 +4823,6 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-124,0,0,3,-74"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-124,0,0,4,59"/>
   </AuxValues>
 </Form>
