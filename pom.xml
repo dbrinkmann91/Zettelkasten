@@ -72,6 +72,7 @@
 				<configuration>
 					<mainClass>de.danielluedecke.zettelkasten.ZettelkastenApp</mainClass>
 					<iconFile>zkn3.icns</iconFile>
+					<generateDiskImageFile>true</generateDiskImageFile>
 				</configuration>
 				<executions>
 					<execution>
