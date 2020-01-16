@@ -1259,6 +1259,7 @@ public class CSettingsDlg extends javax.swing.JDialog {
 
                 }
                 if (regkey != null) {
+                    //FIXME Warning:(1263, 27) java: setValue(at.jta.Key,java.lang.String,java.lang.String) in at.jta.Regor has been deprecated
                     winreg.setValue(regkey, "", "zkn3_auto_file");
                     winreg.closeKey(regkey);
                     regkey = winreg.openKey(Regor.HKEY_CLASSES_ROOT, "zkn3_auto_file\\shell\\Open\\command");
@@ -1268,6 +1269,7 @@ public class CSettingsDlg extends javax.swing.JDialog {
                         regkey = winreg.openKey(Regor.HKEY_CLASSES_ROOT, "zkn3_auto_file\\shell\\Open\\command");
                     }
                     if (regkey != null) {
+                        //FIXME Warning:(1273, 31) java: setValue(at.jta.Key,java.lang.String,java.lang.String) in at.jta.Regor has been deprecated
                         winreg.setValue(regkey, "", "\"" + System.getProperty("java.class.path") + "\" \"%1\"");
                         winreg.closeKey(regkey);
                     }
