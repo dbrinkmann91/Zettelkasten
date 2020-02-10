@@ -471,6 +471,8 @@ public class ExportToTexTask extends org.jdesktop.application.Task<Object, Void>
         exportPageHeader.append("% Eingabe von Umlauten").append(System.lineSeparator());
         exportPageHeader.append("% Siehe http://www.tug.org/texlive/devsrc/Master/texmf-dist/doc/latex/base/inputenc.pdf").append(System.lineSeparator());
         exportPageHeader.append("\\usepackage[utf8]{inputenc}").append(System.lineSeparator()).append(System.lineSeparator());
+        // Encodings for Unicode based TEX systems
+        exportPageHeader.append("\\usepackage[TU]{fontenc}").append(System.lineSeparator()).append(System.lineSeparator());
         // include package for quotes;
         exportPageHeader.append("% Anführungszeichen einfach setzen").append(System.lineSeparator());
         exportPageHeader.append("% Siehe http://mirrors.ctan.org/macros/latex/contrib/csquotes/csquotes.pdf").append(System.lineSeparator());
