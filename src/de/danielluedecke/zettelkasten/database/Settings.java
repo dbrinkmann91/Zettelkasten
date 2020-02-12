@@ -48,6 +48,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -98,6 +100,10 @@ public class Settings {
      * Stores the filepath of the currently in use metadatafile
      */
     private final File datafilepath;
+    /*
+     * Stores the filepath of the directory in which temporary files are written such as images of mathematical formulas
+     */
+    private final String tempdirectorypath;
     /**
      * XML-Document that stores the settings-information
      */
@@ -371,8 +377,19 @@ public class Settings {
         // create file path to settings file
         filepath = createFilePath("zettelkasten-settings.zks3");
         datafilepath = createFilePath("zettelkasten-data.zkd3");
+        tempdirectorypath = createTempDirectoryPath();
         // now initiate some empty xml-documents, which store the information
         initDocuments();
+    }
+
+    private String createTempDirectoryPath() {
+        String tempdirpath = filepath.getParent() + File.separator + "temp" + File.separator;
+        try {
+            Files.createDirectories(Paths.get(tempdirpath));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return tempdirpath;
     }
 
     private File createFilePath(String filename) {
@@ -5658,7 +5675,11 @@ public class Settings {
             el.setText("");
         }
     }
-    
+
+    public String getTempDirectoryPath() {
+        return tempdirectorypath;
+    }
+
     private File genericDirGetter(String key) {
         // we do this step by step rather that appending a ".getText()" to the line below, because
         // by doing so we can check whether the child element exists or not, and avoiding null pointer

@@ -37,22 +37,31 @@ import de.danielluedecke.zettelkasten.util.classes.Comparer;
 import de.danielluedecke.zettelkasten.database.Daten;
 import de.danielluedecke.zettelkasten.database.Settings;
 import de.danielluedecke.zettelkasten.tasks.export.ExportTools;
-import java.awt.Image;
+
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
+import java.util.regex.MatchResult;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
+import javax.swing.*;
+
 import org.jdom2.Element;
+import org.scilab.forge.jlatexmath.TeXConstants;
+import org.scilab.forge.jlatexmath.TeXFormula;
+import org.scilab.forge.jlatexmath.TeXIcon;
 
 /**
  * This class is responsible for the creation of a html page of an zettelkasten
@@ -932,6 +941,8 @@ public class HtmlUbbUtil {
         // we have to do this before(!) converting image-tags, otherwise the source-reference (file://) will
         // be recognized as URL (that methods searches for xxxx://).
         dummy = convertHyperlinks(dummy);
+        // convert formulas
+        dummy = convertMath(dataObj, settings, dummy);
         // convert images, including resizing images
         dummy = convertImages(dataObj, settings, dummy, isExport);
         // convert possible table tags to html
@@ -1209,6 +1220,44 @@ public class HtmlUbbUtil {
             }
         }
         return dummy;
+    }
+
+    private static String convertMath(Daten dataObj, Settings settings, String dummy) {
+        Pattern pattern = Pattern.compile("\\[math\\](.*?)\\[/math\\]");
+        Matcher matcher = pattern.matcher(dummy);
+
+        String newDummy = "";
+        int pos = 0;
+
+        for(int id = 0; matcher.find(); id++) {
+            MatchResult matchResult = matcher.toMatchResult();
+
+            BufferedImage image = renderTeXFormula(matchResult.group(1));
+            Path imagePath = Paths.get(settings.getTempDirectoryPath() + "formula" + id + ".png");
+            try {
+                ImageIO.write(image, "png", imagePath.toFile());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            String imgTag = "<img align=\"middle\" src=\"" + imagePath.toUri() + "\">";
+            newDummy += dummy.substring(pos, matchResult.start()) + imgTag;
+            pos = matchResult.end();
+        }
+        newDummy += dummy.substring(pos);
+        return newDummy;
+    }
+
+    private static BufferedImage renderTeXFormula(String latex) {
+        TeXFormula formula = new TeXFormula(latex);
+        TeXIcon icon = formula.new TeXIconBuilder().setStyle(TeXConstants.STYLE_DISPLAY).setSize(16).build();
+        BufferedImage image = new BufferedImage(icon.getIconWidth(), icon.getIconHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics2D graphics = image.createGraphics();
+        graphics.setColor(Color.white);
+        graphics.fillRect(0, 0, icon.getIconWidth(), icon.getIconHeight());
+        JLabel jLabel = new JLabel();
+        jLabel.setForeground(new Color(0,0,0));
+        icon.paintIcon(jLabel, graphics, 0, 0);
+        return image;
     }
 
     private static String convertImages(Daten dataObj, Settings settings, String dummy, boolean isExport) {
